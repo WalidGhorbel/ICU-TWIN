@@ -1,0 +1,67 @@
+{
+  "vitals": [
+    "hr",
+    "spo2",
+    "rr",
+    "map",
+    "temp"
+  ],
+  "features": [
+    "hr",
+    "spo2",
+    "rr",
+    "map",
+    "temp",
+    "hr_d1",
+    "hr_d2",
+    "hr_rollmean",
+    "hr_slope",
+    "spo2_d1",
+    "spo2_d2",
+    "spo2_rollmean",
+    "spo2_slope",
+    "rr_d1",
+    "rr_d2",
+    "rr_rollmean",
+    "rr_slope",
+    "map_d1",
+    "map_d2",
+    "map_rollmean",
+    "map_slope",
+    "temp_d1",
+    "temp_d2",
+    "temp_rollmean",
+    "temp_slope",
+    "hr_missing",
+    "spo2_missing",
+    "rr_missing",
+    "map_missing",
+    "temp_missing",
+    "age",
+    "gender_bin"
+  ],
+  "target": "deterioration_next_3h",
+  "ranges": {
+    "hr": [
+      20,
+      250
+    ],
+    "spo2": [
+      50,
+      100
+    ],
+    "rr": [
+      3,
+      60
+    ],
+    "map": [
+      20,
+      200
+    ],
+    "temp": [
+      30,
+      43
+    ]
+  },
+  "roll_window": 3
+}

@@ -1,0 +1,20 @@
+{
+  "target_1h": {
+    "auroc_all": 0.8520973593330311,
+    "auroc_stable": 0.7889569899190423,
+    "best_model": "XGBoost",
+    "n_test_rows": 2649
+  },
+  "target_3h": {
+    "auroc_all": 0.8432833725406996,
+    "auroc_stable": 0.780723535347265,
+    "best_model": "XGBoost",
+    "n_test_rows": 2649
+  },
+  "target_6h": {
+    "auroc_all": 0.8151934075099212,
+    "auroc_stable": 0.7535041535041536,
+    "best_model": "XGBoost",
+    "n_test_rows": 2649
+  }
+}

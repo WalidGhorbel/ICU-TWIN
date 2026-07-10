@@ -1,0 +1,394 @@
+{
+  "base_vitals": [
+    "heart_rate",
+    "respiratory_rate",
+    "spo2",
+    "nibp_mean",
+    "abp_mean",
+    "temperature_f",
+    "gcs_total",
+    "lactate"
+  ],
+  "feature_cols": [
+    "abp_diastolic",
+    "abp_mean",
+    "abp_systolic",
+    "heart_rate",
+    "lactate",
+    "nibp_diastolic",
+    "nibp_mean",
+    "nibp_systolic",
+    "respiratory_rate",
+    "spo2",
+    "temperature_f",
+    "gcs_total",
+    "heart_rate_delta3",
+    "heart_rate_rollmean3",
+    "heart_rate_rollstd3",
+    "heart_rate_delta6",
+    "heart_rate_rollmean6",
+    "heart_rate_rollstd6",
+    "respiratory_rate_delta3",
+    "respiratory_rate_rollmean3",
+    "respiratory_rate_rollstd3",
+    "respiratory_rate_delta6",
+    "respiratory_rate_rollmean6",
+    "respiratory_rate_rollstd6",
+    "spo2_delta3",
+    "spo2_rollmean3",
+    "spo2_rollstd3",
+    "spo2_delta6",
+    "spo2_rollmean6",
+    "spo2_rollstd6",
+    "nibp_mean_delta3",
+    "nibp_mean_rollmean3",
+    "nibp_mean_rollstd3",
+    "nibp_mean_delta6",
+    "nibp_mean_rollmean6",
+    "nibp_mean_rollstd6",
+    "abp_mean_delta3",
+    "abp_mean_rollmean3",
+    "abp_mean_rollstd3",
+    "abp_mean_delta6",
+    "abp_mean_rollmean6",
+    "abp_mean_rollstd6",
+    "temperature_f_delta3",
+    "temperature_f_rollmean3",
+    "temperature_f_rollstd3",
+    "temperature_f_delta6",
+    "temperature_f_rollmean6",
+    "temperature_f_rollstd6",
+    "gcs_total_delta3",
+    "gcs_total_rollmean3",
+    "gcs_total_rollstd3",
+    "gcs_total_delta6",
+    "gcs_total_rollmean6",
+    "gcs_total_rollstd6",
+    "lactate_delta3",
+    "lactate_rollmean3",
+    "lactate_rollstd3",
+    "lactate_delta6",
+    "lactate_rollmean6",
+    "lactate_rollstd6",
+    "med_acetaminopheniv",
+    "med_albumin_5",
+    "med_calcium_gluconate",
+    "med_cefazolin",
+    "med_cefepime",
+    "med_d5_12ns",
+    "med_dextrose_5",
+    "med_famotidine_pepcid",
+    "med_fentanyl",
+    "med_fentanyl_concentrate",
+    "med_furosemide_lasix",
+    "med_gastric_meds",
+    "med_gt_flush",
+    "med_heparin_sodium",
+    "med_heparin_sodium_prophylaxis",
+    "med_hydromorphone_dilaudid",
+    "med_insulin_glargine",
+    "med_insulin_humalog",
+    "med_insulin_regular",
+    "med_kcl_bolus",
+    "med_lorazepam_ativan",
+    "med_lr",
+    "med_magnesium_sulfate",
+    "med_magnesium_sulfate_bolus",
+    "med_metoprolol",
+    "med_midazolam_versed",
+    "med_morphine_sulfate",
+    "med_nacl_09",
+    "med_norepinephrine",
+    "med_or_crystalloid_intake",
+    "med_packed_red_blood_cells",
+    "med_pantoprazole_protonix",
+    "med_phenylephrine",
+    "med_piggyback",
+    "med_po_intake",
+    "med_potassium_chloride",
+    "med_preadmissionnonicu_intake",
+    "med_propofol",
+    "med_solution",
+    "med_vancomycin"
+  ],
+  "med_cols": [
+    "med_acetaminopheniv",
+    "med_albumin_5",
+    "med_calcium_gluconate",
+    "med_cefazolin",
+    "med_cefepime",
+    "med_d5_12ns",
+    "med_dextrose_5",
+    "med_famotidine_pepcid",
+    "med_fentanyl",
+    "med_fentanyl_concentrate",
+    "med_furosemide_lasix",
+    "med_gastric_meds",
+    "med_gt_flush",
+    "med_heparin_sodium",
+    "med_heparin_sodium_prophylaxis",
+    "med_hydromorphone_dilaudid",
+    "med_insulin_glargine",
+    "med_insulin_humalog",
+    "med_insulin_regular",
+    "med_kcl_bolus",
+    "med_lorazepam_ativan",
+    "med_lr",
+    "med_magnesium_sulfate",
+    "med_magnesium_sulfate_bolus",
+    "med_metoprolol",
+    "med_midazolam_versed",
+    "med_morphine_sulfate",
+    "med_nacl_09",
+    "med_norepinephrine",
+    "med_or_crystalloid_intake",
+    "med_packed_red_blood_cells",
+    "med_pantoprazole_protonix",
+    "med_phenylephrine",
+    "med_piggyback",
+    "med_po_intake",
+    "med_potassium_chloride",
+    "med_preadmissionnonicu_intake",
+    "med_propofol",
+    "med_solution",
+    "med_vancomycin"
+  ],
+  "med_meta": [
+    {
+      "col": "med_nacl_09",
+      "label": "NaCl 0.9%",
+      "category": "Fluids/Intake"
+    },
+    {
+      "col": "med_dextrose_5",
+      "label": "Dextrose 5%",
+      "category": "Fluids/Intake"
+    },
+    {
+      "col": "med_po_intake",
+      "label": "PO Intake",
+      "category": "Fluids/Intake"
+    },
+    {
+      "col": "med_magnesium_sulfate",
+      "label": "Magnesium Sulfate",
+      "category": "Medications"
+    },
+    {
+      "col": "med_solution",
+      "label": "Solution",
+      "category": "Fluids/Intake"
+    },
+    {
+      "col": "med_magnesium_sulfate_bolus",
+      "label": "Magnesium Sulfate (Bolus)",
+      "category": "Medications"
+    },
+    {
+      "col": "med_potassium_chloride",
+      "label": "Potassium Chloride",
+      "category": "Medications"
+    },
+    {
+      "col": "med_heparin_sodium_prophylaxis",
+      "label": "Heparin Sodium (Prophylaxis)",
+      "category": "Medications"
+    },
+    {
+      "col": "med_vancomycin",
+      "label": "Vancomycin",
+      "category": "Antibiotics"
+    },
+    {
+      "col": "med_lr",
+      "label": "LR",
+      "category": "Fluids/Intake"
+    },
+    {
+      "col": "med_insulin_regular",
+      "label": "Insulin - Regular",
+      "category": "Medications"
+    },
+    {
+      "col": "med_propofol",
+      "label": "Propofol",
+      "category": "Medications"
+    },
+    {
+      "col": "med_furosemide_lasix",
+      "label": "Furosemide (Lasix)",
+      "category": "Medications"
+    },
+    {
+      "col": "med_piggyback",
+      "label": "Piggyback",
+      "category": "Fluids/Intake"
+    },
+    {
+      "col": "med_calcium_gluconate",
+      "label": "Calcium Gluconate",
+      "category": "Medications"
+    },
+    {
+      "col": "med_acetaminopheniv",
+      "label": "Acetaminophen-IV",
+      "category": "Medications"
+    },
+    {
+      "col": "med_gastric_meds",
+      "label": "Gastric Meds",
+      "category": "Fluids/Intake"
+    },
+    {
+      "col": "med_kcl_bolus",
+      "label": "KCL (Bolus)",
+      "category": "Medications"
+    },
+    {
+      "col": "med_or_crystalloid_intake",
+      "label": "OR Crystalloid Intake",
+      "category": "Fluids/Intake"
+    },
+    {
+      "col": "med_fentanyl",
+      "label": "Fentanyl",
+      "category": "Medications"
+    },
+    {
+      "col": "med_gt_flush",
+      "label": "GT Flush",
+      "category": "Fluids/Intake"
+    },
+    {
+      "col": "med_morphine_sulfate",
+      "label": "Morphine Sulfate",
+      "category": "Medications"
+    },
+    {
+      "col": "med_norepinephrine",
+      "label": "Norepinephrine",
+      "category": "Medications"
+    },
+    {
+      "col": "med_hydromorphone_dilaudid",
+      "label": "Hydromorphone (Dilaudid)",
+      "category": "Medications"
+    },
+    {
+      "col": "med_insulin_humalog",
+      "label": "Insulin - Humalog",
+      "category": "Medications"
+    },
+    {
+      "col": "med_packed_red_blood_cells",
+      "label": "Packed Red Blood Cells",
+      "category": "Blood Products/Colloids"
+    },
+    {
+      "col": "med_phenylephrine",
+      "label": "Phenylephrine",
+      "category": "Medications"
+    },
+    {
+      "col": "med_insulin_glargine",
+      "label": "Insulin - Glargine",
+      "category": "Medications"
+    },
+    {
+      "col": "med_famotidine_pepcid",
+      "label": "Famotidine (Pepcid)",
+      "category": "Medications"
+    },
+    {
+      "col": "med_fentanyl_concentrate",
+      "label": "Fentanyl (Concentrate)",
+      "category": "Medications"
+    },
+    {
+      "col": "med_cefepime",
+      "label": "Cefepime",
+      "category": "Antibiotics"
+    },
+    {
+      "col": "med_lorazepam_ativan",
+      "label": "Lorazepam (Ativan)",
+      "category": "Medications"
+    },
+    {
+      "col": "med_cefazolin",
+      "label": "Cefazolin",
+      "category": "Antibiotics"
+    },
+    {
+      "col": "med_metoprolol",
+      "label": "Metoprolol",
+      "category": "Medications"
+    },
+    {
+      "col": "med_pantoprazole_protonix",
+      "label": "Pantoprazole (Protonix)",
+      "category": "Medications"
+    },
+    {
+      "col": "med_preadmissionnonicu_intake",
+      "label": "Pre-Admission/Non-ICU Intake",
+      "category": "Fluids/Intake"
+    },
+    {
+      "col": "med_albumin_5",
+      "label": "Albumin 5%",
+      "category": "Blood Products/Colloids"
+    },
+    {
+      "col": "med_d5_12ns",
+      "label": "D5 1/2NS",
+      "category": "Fluids/Intake"
+    },
+    {
+      "col": "med_midazolam_versed",
+      "label": "Midazolam (Versed)",
+      "category": "Medications"
+    },
+    {
+      "col": "med_heparin_sodium",
+      "label": "Heparin Sodium",
+      "category": "Medications"
+    }
+  ],
+  "trend_windows_h": [
+    3,
+    6
+  ],
+  "horizons_h": [
+    1,
+    3,
+    6
+  ],
+  "deterioration_rules": {
+    "spo2": {
+      "op": "lt",
+      "thr": 90
+    },
+    "map": {
+      "op": "lt",
+      "thr": 65
+    },
+    "heart_rate": {
+      "op": "gt",
+      "thr": 130
+    },
+    "respiratory_rate": {
+      "op": "gt",
+      "thr": 30
+    },
+    "temperature_c": {
+      "op": "gt",
+      "thr": 102.2
+    }
+  },
+  "risk_levels": {
+    "critical": 0.6,
+    "watch": 0.3
+  },
+  "temp_f_thr": 102.2
+}
